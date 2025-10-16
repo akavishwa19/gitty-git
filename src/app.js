@@ -30,7 +30,7 @@ async function fetchVIaAxios(){
   }
 }
 
-const PORT = parseInt(process.env.PORT) || 3001;
+const PORT = Number(process.env.PORT) || 3001;
 
 app.listen(PORT, async () => {
  console.log( "app is running on " + chalk.blue.bold("http://localhost:" + PORT));
