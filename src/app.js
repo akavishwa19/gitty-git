@@ -1,5 +1,6 @@
 const express = require("express");
 const cors=require("cors");
+const chalk = require("chalk");
 require("dotenv").config({quiet:true});
 
 const app = express();
@@ -21,5 +22,5 @@ app.get("/health", async (req, res) => {
 const PORT = parseInt(process.env.PORT) || 3001;
 
 app.listen(PORT, () => {
-  console.log("server listens on http://localhost:" + PORT);
+ console.log( "app is running on " + chalk.blue.bold("http://localhost:" + PORT))
 });
