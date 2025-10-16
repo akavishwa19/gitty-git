@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Akash Vishwakarma",
+    "age": 21,
+    "gender": "Male",
+    "grade": "A",
+    "subjects": ["Math", "Physics", "Chemistry"]
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "age": 22,
+    "gender": "Female",
+    "grade": "B+",
+    "subjects": ["Biology", "Chemistry", "English"]
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "age": 20,
+    "gender": "Male",
+    "grade": "A-",
+    "subjects": ["History", "Geography", "English"]
+  },
+  {
+    "id": 4,
+    "name": "Sneha Kapoor",
+    "age": 21,
+    "gender": "Female",
+    "grade": "B",
+    "subjects": ["Math", "Computer Science", "Physics"]
+  },
+  {
+    "id": 5,
+    "name": "Aditya Singh",
+    "age": 23,
+    "gender": "Male",
+    "grade": "C+",
+    "subjects": ["Economics", "Math", "English"]
+  }
+]
