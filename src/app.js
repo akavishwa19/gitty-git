@@ -1,8 +1,8 @@
-const express = require("express");
-const cors=require("cors");
-const chalk = require("chalk");
-const axios = require("axios");
-require("dotenv").config({quiet:true});
+import express from "express";
+import cors from "cors"
+import chalk from "chalk";
+import axios from "axios";
+import 'dotenv/config'
 
 const app = express();
 
