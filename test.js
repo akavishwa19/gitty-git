@@ -51,3 +51,12 @@ const p5 = () =>
  Promise.all([p1(),p2(),p4()])
  .then((res)=>console.log(res))
  .catch((err)=>console.log(err))
+
+//promise.allSettled method returns an array of resolved or rejected values and their states
+//it never rejects and always waits till all the promises are settled 
+
+Promise.allSettled([p1(),p2(),p3()])
+.then((res)=>console.log(res))
+
+Promise.allSettled([p1(),p2(),p3(),p4()])
+.then((res)=>console.log(res))
