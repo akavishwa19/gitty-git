@@ -60,3 +60,28 @@ Promise.allSettled([p1(),p2(),p3()])
 
 Promise.allSettled([p1(),p2(),p3(),p4()])
 .then((res)=>console.log(res))
+
+//promise.race method settles as soons as any of the promise is settled
+//works the same irrespective of whether the promises resolve or reject
+
+Promise.race([p1(),p2(),p3()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+
+Promise.race([p1(),p2(),p3(),p4()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+
+//promse.any method returns the value of the first resolved promise , rejects only when all promises reject with an aggreagtor error
+
+Promise.any([p1(),p2(),p3()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+
+Promise.any([p1(),p2(),p3(),p4()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
+
+Promise.any([p4(),p5()])
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
