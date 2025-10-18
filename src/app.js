@@ -43,3 +43,5 @@ app.listen(PORT, async () => {
  console.log( "app is running on " + chalk.blue.underline.bold("http://localhost:" + PORT));
  await fetchVIaAxios()
 });
+
+console.log('test log')
